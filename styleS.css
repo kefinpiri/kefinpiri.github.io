@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+    background: linear-gradient(45deg, #f0f0f0, #555); /* Gradien warna pink ke oranye */
+    font-family: Arial, sans-serif;
+    color:#ff47b8;
+}
+/* =========================================================================navbar================================================= */
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:15px;
+    background-color:#333;
+    color: #00ced1;
+    position:relative;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+.navbar-logo a {
+    color: #00ced1;
+    text-decoration:none;
+    font-size:26px;  
+    font-weight: bold; 
+
+ .navbar-link {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+ }
+    
+.navbar-link > li > a {
+        text-decoration: none;
+        color: #00ced1;
+        transition: color 0.3s; /* Efek perubahan warna */
+    }
+
+}
+.navbar-link{
+    list-style:none;
+    display:flex;
+    gap: 20px;;
+   position:relative;   
+}
+.navbar-link>li>a{
+    text-decoration:none;
+    color: #00ced1;
+    transition: color 0.3s; /* Efek perubahan warna */
+}
+    .navbar-link > li > a:hover {
+    color: #ff6347; /* Warna saat diarahkan */
+
+/*===================================================== profile section=============================================================== */
+}
+.profile-section{
+    background: linear-gradient(to top, #ffecd2, #fcb69f); /* Gradien lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+     padding: 50px 0;
+    }  
+ .profile-container {
+    text-align: center;
+    padding: 30px;
+    border: radius 100vh;;
+
+    }
+
+.profile-name{
+    font-size:30px;
+    color: #333;
+
+}
+.profile-bio{
+    color:#555;
+    font-size:18px;
+    margin-bottom: 20px;
+}
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #ff6347;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.profile-container>p,h1{
+    margin: 2px;
+}
+
+.profile-buton{
+    background-color: #00ced1;
+    color: white;
+    cursor: pointer;
+    padding: 12ex 25px;
+    border: none;
+    border-radius:5px;
+    transition: background-color 0.3s;
+}
+.profile-button:hover {
+    background-color: #ff6347; /* Warna saat diarahkan */
+}
+/* ==========================================================class about section==================================================== */
+.about-container{
+    display:flex;
+    justify-content:space-between;
+    max-width:1200px;
+    margin: 0 auto;  
+    padding: 20px;
+    gap: 20px;
+    padding: 50px 20px ;
+
+}
+.about-item{
+    flex: 1;
+    padding:20px;
+    background: color #333;;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    transition: transfrom 0.3s ease;
+}
+.about-item:hover {
+    transform: translateY(-10px); /* Efek angkat saat hover */
+}
+
+.classabout-titele h2{
+    font-size:22px;
+    color: #333;
+    margin-bottom:10px;
+}
+.about-decription p{
+    font-size:16px;
+    color: #666;
+    text-align: justify;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.about-description {
+    text-align: justify;
+    background-color: #f0f0f0; /* Warna latar kotak */
+    padding: 15px; /* Jarak di dalam kotak */
+    border-radius: 8px; /* Sudut kotak agak bulat */
+    border: 1px solid #add; /* Tambahkan garis tepi tipis */
+    max-width: 300px; /* Lebar maksimum kotak */
+    margin: 0 auto; /* Pusatkan kotak */
+}
+
+/* ===================================gallery section===================================================================== */
+ .gallery-section{
+    background-color:#eaf0f5;
+    padding:50px 20px;
+}
+
+.gallery-container {
+  text-align: center; /* Pusatkan teks */
+    padding: 20px; /* Jarak antara teks dan galeri */
+}
+
+.gallery-title {
+    font-size: 30px;
+    font-weight: bold;
+    color:#333;
+    margin-bottom: 20px;
+}
+
+.gallery-description {
+    font-size: 16px;
+    margin-bottom:30px; /* Jarak antara deskripsi dan galeri */
+    color: #333; /* Warna teks deskripsi */
+}
+/* =============================Galeri berada di bawah tek===================================================================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif */
+    gap: 20px; /* Jarak antar gambar */
+}
+
+.gallery-item img {
+    width:100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius:10px; /* Sudut gambar agak bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Bayangan */
+    transition: transform 0.3s ease; /* Efek zoom */
+}
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efek zoom saat diarahkan */
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+.social-icon{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius:5px;
+    font-size: 16px;
+    transition: background-color 0.3s;    
+}
+/* ------------------------CONTACT SECTION DESIGN--------------------------------------------------------------  */
+.contact-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Menyelaraskan konten ke kanan */
+    align-items:center;
+    min-height:100vh; /* Mengatur tinggi minimal agar konten berada di tengah layar secara vertikal */
+    padding:50px;
+    box-sizing: border-box;
+    background-color: #eaf0f5;
+}
+
+/* Style untuk Section Contact */
+.contact {
+    width: 100%;
+    height:100%;
+    max-width:250px;
+    padding:450px;
+    font-family: Arial, sans-serif;
+    margin-right:50px; /* menambahkan margin untuk lebih ke tengah kanan */
+    text-align: center; /* Mengatur seluruh teks di dalam .contact agar berada di tengah */
+
+
+}
+
+/* Heading */
+.contact .heading {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#d1006ccb;
+}
+
+.contact .heading span {
+    color: #ff47b8;
+}
+
+/* Form sebagai Tabel */
+form {
+    width:95%;
+    border-spacing:10px;
+}
+
+
+/*Style untuk Input dan Label */
+.input-field, .textarea-field {
+    display: table-row;
+    text-align: center; /* Pusatkan semua konten di dalam input-field dan textarea-field */
+}
+
+.input-field label, .textarea-field label {
+    display: table-cell;
+    padding-right:10px;
+    font-size: 1em;
+    color: #555;
+    vertical-align: middle;
+    text-align: center; /* Pusatkan teks label */
+}
+
+.input-field input, .textarea-field textarea {
+    /* display: table-cell; */
+    /* width: 100%; */
+    /* padding: 10px 15px; */
+    border: 2px solid #ff47b8;
+    border-radius:8px;
+    outline: none;
+    font-size: 1em;
+    background: color #333;
+    transition: border-color 0.3s ease;
+    margin: 0 auto; /* Pusatkan input di dalam kolomnya */
+}
+
+/* Efek Hover pada Input dan Textarea */
+.input-field input:focus, .textarea-field textarea:focus {
+    border-color: #ff47b8;
+}
+
+.input-field{
+    text-align: center;
+    width: 100%;
+    height:100%;
+}
+
+/* Style untuk Textarea */
+textarea {
+    resize: vertical;
+    height:100px;
+    width:200px;
+    height:20px;
+    text-align: center;
+}
+
+/* Tombol Submit */
+.btn-box {
+    text-align: center;
+    margin-top:20px;
+
+}
+
+.btn-box .btn {
+    padding:10px 20px;
+    border: none;
+    background-color: #4c9eafb7;
+    color: #fff;
+    font-size: 1em;
+    border-radius:8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-box .btn:hover {
+    background-color: #388e3c;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 600px) {
+    .contact {
+        padding: 20px;
+    }
+    form {
+        border-spacing: 10px;
+    }
+    .contact-wrapper {
+        justify-content: center; /* Pada layar kecil, posisikan kembali di tengah */
+        padding:20px;
+    }
+}
+
+/* class================================================================================================== footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li a {
+    display: inline-block;
+    width: 25px;
+    height:25px;
+}
+
+.social-links img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
